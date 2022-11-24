@@ -4,8 +4,13 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <p></p>
+    </div>
     <button id="demo">
-        hasil
+        <p>
+            hasil
+        </p>
     </button>
 </body>
     <script>
@@ -15,11 +20,11 @@
         window.onload =     
         function (){
             var btn = document.getElementById('demo');
-            btn.addEventListener("click", myfunction);
+            btn.addEventListener("click", myfunction, false);
 
             function myfunction(){
             alert (luas);
-            btn.removeEventListener("click", myfunction);    
+            btn.removeEventListener("click", myfunction, false);    
             }
         }
     </script>
